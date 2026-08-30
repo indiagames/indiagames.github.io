@@ -1,62 +1,153 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak IT & Web Services - Free Games</title>
+  <style>
+    /* Gold themed design */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fff8f0; /* soft background */
+      color: #333;
+    }
 
-          gtag('config', 'G-7FN7LEVWXD');
-        </script>
+    header {
+      background: linear-gradient(90deg, #b8860b, #ffd700); /* gold gradient */
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../images/ico.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/storage/css/games.css">
-        <title>Games | Play</title>
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
 
-        <meta name="description" content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface">
-        <meta property="og:site_name" content="game">
-        <meta property="og:title" content="game">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface">
-        
-        <style>
-            .pinned-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+    nav {
+      margin-top: 10px;
+    }
 
-            .pin-button {
-                position: absolute;
-                top: 5px;
-                right: 5px; 
-                z-index: 2; 
-            }
-        </style>
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-        <script>
-            if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/offline-worker.js').then(function(registration) {
-                    console.log('service worker initalised! scope:', registration.scope);
-        
-                    navigator.serviceWorker.addEventListener('message', function(event) {
-                        if (event.data === 'cached') {
-                            document.getElementById('cache-status').style.display = 'block';
-                        }
-                    });
-                }, function(error) {
-                    console.log('ack, error with serviceworker! ', error);
-                });
-            });
-        }
-            
-        </script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6363845648031578"
+    nav a:hover {
+      color: #333;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #b8860b;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #b8860b;
+    }
+
+    a:hover {
+      color: #ffd700;
+    }
+
+    /* Gold themed button styles */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #b8860b, #ffd700);
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: linear-gradient(90deg, #ffd700, #b8860b);
+      color: #333;
+      transform: scale(1.05);
+    }
+
+    .button:active {
+      transform: scale(0.98);
+    }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6363845648031578"
      crossorigin="anonymous"></script>
-  </head>
+
+</head>
+<body>
+
+<header>
+  <h1>Play Free Games</h1>
+  <nav>
+    <!-- Internal pages -->
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="refund.html">Refund/Return Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <!-- External games -->
+
+    <a href="https://gamefans.web.app/" target="_blank">Adventure Games</a>
+
+    <a href="https://deepakslot.web.app/" target="_blank">Slot</a>
+    <a href="https://catbal.web.app/" target="_blank">Cat</a>
+    <a href="https://deepakrummy.github.io/game/" target="_blank">Wow Games</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>Welcome to our free, open‑source games hub. All games are hosted on GitHub and developed by 
+     <a href="https://deepakworld.web.app/">Deepak IT & Web Services</a>. 
+     Play children’s games and classic board games with no charges, no login required.</p>
+
+  <!-- Example gold button -->
+  <a href="games/index.html" class="button">Play Free Games</a>
+
+  <!-- Google AdSense Ad Slot -->
+  <div style="margin:20px 0; text-align:center;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</section>
+
+
   <body>
     
         <h1 class="typewriter"><span id="cursor"></span></h1>
@@ -72,9 +163,9 @@
             <option value="simulation">simulation</option>
         </select>
          
-    <p class="linkp">•<a href="https://deepakrummy.web.app/" target="_blank">Rummy</a>•<a href="https://indiagames.github.io/" target="_blank">Home</a>•<a href="https://indiagames.github.io/about.html" target="_blank">About</a>•<a href="https://indiagames.github.io/contact.html" target="_blank">Contact</a>•<a href="https://roulettes.web.app/" target="_blank">Roulette</a>•<a href="https://gamefans.web.app/" target="_blank">Adventure Games</a>•<a href="https://deepakspin.web.app/" target="_blank">Spin</a>•<a href="https://deepakslot.web.app/" target="_blank">Slot</a>•<a href="https://catbal.web.app/" target="_blank">Cat</a>•<a href="https://deepakrummy.github.io/game/" target="_blank">Wow Games</a>•
+
    
-        <a href="https://www.paypal.com/paypalme/VTXDZRNHWDFU8?v=1&utm_source=unp&utm_medium=email&utm_campaign=RT000481&utm_unptid=add4e82e-00d9-11f0-ae69-557dcc4c0799&ppid=RT000481&cnac=IN&rsta=en_GB%28en-IN%29&cust=VTXDZRNHWDFU8&unptid=add4e82e-00d9-11f0-ae69-557dcc4c0799&calc=f6012132d2b1a&unp_tpcid=ppme-social-business-profile-created&page=main%3Aemail%3ART000481&pgrp=main%3Aemail&e=cl&mchn=em&s=ci&mail=sys&appVersion=1.315.0&tenant_name=PAYPAL&xt=145585%2C154413%2C104038&link_ref=paypalme_vtxdzrnhwdfu8" class="button">DonatePaypal</a>        <br>
+        <br>
         <h2 class="pinned-header">starred games</h2>
         <div class="pinned-container">
 
@@ -3824,5 +3915,10 @@
 
         
 
-  </body>
+
+<footer>
+  <p>© 2026 Deepak IT & Web Services | Verified Enterprise | Microsoft for Startups Partner</p>
+</footer>
+
+</body>
 </html>
